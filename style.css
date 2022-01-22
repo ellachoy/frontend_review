@@ -29,5 +29,9 @@ input[type="button"] {
     border:5px solid #ccc;
     border-radius:50% ;
     box-shadow: -17px 0px 15px 8px #4444;
-    ;
+    font-weight:600;
+    font-family: Palatino, Roboto;
+    font-size: 25px;
+    line-height: 1.2;
+    letter-spacing: 0.161em;
 }
