@@ -20,7 +20,7 @@
 div{
     display: flex;
 }
-input[type="button"] {
+input[type="button"]:not(#form) {
     width:100%;
     height:100%;
     padding:var(--padding);
@@ -34,4 +34,14 @@ input[type="button"] {
     font-size: 25px;
     line-height: 1.2;
     letter-spacing: 0.161em;
+}
+fieldset{
+    display:flex;
+    flex-direction: column;
+    padding:var(--padding);
+    margin:var(--padding) 0;
+}
+label{
+    color:var(--blue-color);
+    font-size:var(--font-medium);
 }
