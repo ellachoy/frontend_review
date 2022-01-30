@@ -25,13 +25,18 @@
     </div>
      <!-- toggleBtn -->
      <input  id="night_day" type="button" value="night" onclick="
-     if night
+     if (night){
         document.querySelector('body').style.backgroundColor ='black';
         document.querySelector('body').style.color ='white';   
+     }
+        
     
-     else 
+     else {
         document.querySelector('body').style.backgroundColor='white';
         document.querySelector('body').style.color='black';
+     }
+     ">
+        
     
    <!-- <form action="#" >
        <fieldset>
