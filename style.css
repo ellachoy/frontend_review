@@ -22,6 +22,9 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 300;
 }
+a{
+    color:#5145fd;
+}
 div{
     display: flex;
 }
