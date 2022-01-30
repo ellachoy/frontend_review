@@ -24,19 +24,34 @@
        
     </div>
      <!-- toggleBtn -->
+     <h3>oneBtn</h3>
      <input  id="night_day" type="button" value="night" onclick="
-     if (night){
+     if (document.querySelector('#night_day').value === 'night'){
         document.querySelector('body').style.backgroundColor ='black';
-        document.querySelector('body').style.color ='white';   
+        document.querySelector('body').style.color ='white';
+        document.querySelector('#night_day').value = 'day';   
      }
-        
-    
      else {
         document.querySelector('body').style.backgroundColor='white';
         document.querySelector('body').style.color='black';
+        document.querySelector('#night_day').value = 'night';  
      }
      ">
-        
+     <!-- refactoring -->
+     <h3>refactoring</h3>
+     <input  type="button" value="night" onclick="
+      var target = document.querySelector('body')
+     if (this.value === 'night'){
+        target.style.backgroundColor ='black';
+       target.style.color ='white';
+        this.value = 'day';   
+     }
+     else {
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        this.value = 'night';  
+     }
+     ">
     
    <!-- <form action="#" >
        <fieldset>
