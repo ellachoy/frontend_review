@@ -1,5 +1,5 @@
 console.log("hi")
-
+var target = document.querySelector('body')
 function LinksSetColor(color) {
     var alist =document.querySelectorAll('a');
        var i =0;
@@ -8,14 +8,18 @@ function LinksSetColor(color) {
            i = i + 1;
        }
 }
-function setColor(color){
+function BodySetColor(color){
     target.style.color =color; 
 }
+function BodySetBackgroundColor(color){
+    target.style.backgroundColor =color; 
+}
 function nightDayHandler(self){
-    var target = document.querySelector('body')
+    // var target = document.querySelector('body')
     if (self.value === 'night'){
-       target.style.backgroundColor ='black';
-       setColor('white')
+    //    target.style.backgroundColor ='black';
+    BodySetBackgroundColor('black')
+       BodySetColor('white')
     //   target.style.color ='white';
       self.value = 'day';
 
@@ -29,8 +33,9 @@ function nightDayHandler(self){
     //    }
     }
     else {
-       target.style.backgroundColor='white';
-       setColor('black')
+    //    target.style.backgroundColor='white';
+    BodySetBackgroundColor('white')
+       BodySetColor('black')
     //    target.style.color='black';
        self.value = 'night'; 
 
